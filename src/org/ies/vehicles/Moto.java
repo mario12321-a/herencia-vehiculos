@@ -10,6 +10,11 @@ public class Moto extends Vehicle{
         this.cilindrada = cilindrada;
     }
 
+    @Override
+    public void showInfo() {
+        System.out.println("la moto con matricula: " + matricula + "y de cilindrada: " + cilindrada + " tiene: " + km + " kilometros ");
+    }
+
     public String getCilindrada() {
         return cilindrada;
     }

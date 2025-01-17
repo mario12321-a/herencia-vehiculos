@@ -13,6 +13,11 @@ public abstract class Vehicle {
 
     public abstract void showInfo();
 
+    public void move(int distancia){
+        km+=distancia;
+        System.out.println("recorridos " + distancia + " mas");
+    }
+
     public int getKm() {
         return km;
     }
@@ -41,14 +46,4 @@ public abstract class Vehicle {
     public int hashCode() {
         return Objects.hash(km, matricula);
     }
-
-    @Override
-    public String toString() {
-        return "Vehicle{" +
-                "km=" + km +
-                ", matricula='" + matricula + '\'' +
-                '}';
-    }
-
-
 }

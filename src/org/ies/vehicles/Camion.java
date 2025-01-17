@@ -12,9 +12,8 @@ public class Camion extends Vehicle{
 
     @Override
     public void showInfo() {
-        System.out.println("camion");
+        System.out.println("camion con matricula: " + matricula + " tiene numero de ejes: " + numEjes + " tiene: " + km + " kilometros ");
     }
-
     public int getNumEjes() {
         return numEjes;
     }

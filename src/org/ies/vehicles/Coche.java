@@ -12,6 +12,11 @@ public class Coche extends Vehicle{
         Caballos = caballos;
     }
 
+    @Override
+    public void showInfo() {
+        System.out.println("el coche con matricula: " + matricula + " con: " + km + " kilometros tiene: " + numPuertas + " puertas y " + Caballos + " caballos");
+    }
+
     public int getNumPuertas() {
         return numPuertas;
     }

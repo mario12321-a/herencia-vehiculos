@@ -7,5 +7,11 @@ public class Main {
         var coche = new Coche(150000,"1234COC ",4,90);
         var moto = new Moto(80000,"1234MOT ","200CC");
 
+        camion.showInfo();
+        camion.move(1000);
+
+        coche.showInfo();
+
+        moto.showInfo();
     }
 }
